@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.e2g16.quizapp"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.e2g16.quizapp"
@@ -16,7 +16,9 @@ android {
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
-
+buildFeatures {
+    viewBinding = true
+}
     buildTypes {
         release {
             isMinifyEnabled = false

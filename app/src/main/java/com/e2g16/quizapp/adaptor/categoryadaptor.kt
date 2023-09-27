@@ -9,7 +9,6 @@ import com.e2g16.quizapp.modle.categoryModelClass
 class categoryadaptor(var categoryList: ArrayList<categoryModelClass>) : RecyclerView.Adapter<categoryadaptor.MycategoryViewHolder>() {
     class MycategoryViewHolder(var binding: CategoryitemBinding) :RecyclerView.ViewHolder(binding.root) {
 
-
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MycategoryViewHolder {

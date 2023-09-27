@@ -20,9 +20,9 @@ class HomeFragment : Fragment() {
 
     private var categoryList = ArrayList<categoryModelClass>()
 
-//    override fun onCreate(savedInstanceState: Bundle?) {
-//        super.onCreate(savedInstanceState)
-//    }
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater,

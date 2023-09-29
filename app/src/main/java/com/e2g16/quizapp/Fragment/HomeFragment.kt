@@ -9,7 +9,7 @@ import androidx.recyclerview.widget.GridLayoutManager
 import com.e2g16.quizapp.R
 import com.e2g16.quizapp.adaptor.categoryadaptor
 import com.e2g16.quizapp.databinding.FragmentHomeBinding
-import com.e2g16.quizapp.modle.categoryModelClass
+import com.e2g16.quizapp.model.categoryModelClass
 
 
 class HomeFragment : Fragment() {

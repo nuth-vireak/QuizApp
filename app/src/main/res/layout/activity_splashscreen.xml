@@ -16,14 +16,15 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/splashimg" />
+        app:srcCompat="@drawable/splashimg"
+        android:contentDescription="@string/image_representing_the_splash_screen"/>
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:text="Welcome"
+        android:text="@string/welcome"
         android:textColor="@color/textColorWhite"
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -35,7 +36,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
-        android:text="Nice to meet you! Let's make \n your knowledge great"
+        android:text="@string/slogan"
         android:textAlignment="center"
         android:textColor="@color/textColorWhite"
         android:textSize="20sp"

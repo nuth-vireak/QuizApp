@@ -28,15 +28,16 @@
                 android:id="@+id/profile"
                 android:layout_width="35dp"
                 android:layout_height="35dp"
-                android:layout_marginRight="10dp"
-                app:srcCompat="@drawable/avtar" />
+                android:layout_marginEnd="10dp"
+                app:srcCompat="@drawable/avtar"
+                android:contentDescription="@string/profile_avatar" />
 
             <TextView
                 android:id="@+id/Name"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="TextView"
+                android:text="@string/textview"
                 android:textColor="@color/textColorWhite"
                 android:textStyle="bold" />
 
@@ -44,13 +45,14 @@
                 android:id="@+id/imageView7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:srcCompat="@drawable/coin" />
+                app:srcCompat="@drawable/coin"
+                android:contentDescription="@string/coin_icon" />
 
             <TextView
                 android:id="@+id/coin"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="TextView"
+                android:text="@string/textview"
                 android:textColor="@color/textColorWhite"
                 android:textStyle="bold" />
 

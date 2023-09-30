@@ -17,14 +17,15 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/question" />
+        app:srcCompat="@drawable/question"
+        android:contentDescription="@string/question_logo" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:text="Sign Up"
+        android:text="@string/sign_up"
         android:textColor="@color/textColorWhite"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -38,12 +39,14 @@
         android:layout_marginTop="24dp"
         android:background="@drawable/edittextbackground"
         android:ems="10"
-        android:hint="Your Name"
+        android:hint="@string/your_name"
         android:inputType="text"
-        android:paddingLeft="15dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        android:autofillHints="Please input your name" />
 
     <EditText
         android:id="@+id/editTextText2"
@@ -52,12 +55,14 @@
         android:layout_marginTop="24dp"
         android:background="@drawable/edittextbackground"
         android:ems="10"
-        android:hint="Age"
+        android:hint="@string/age"
         android:inputType="text"
-        android:paddingLeft="15dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
         app:layout_constraintEnd_toEndOf="@+id/editTextText"
         app:layout_constraintStart_toStartOf="@+id/editTextText"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextText"
+        android:autofillHints="Please input your age" />
 
     <EditText
         android:id="@+id/editTextTextEmailAddress"
@@ -66,12 +71,14 @@
         android:layout_marginTop="24dp"
         android:background="@drawable/edittextbackground"
         android:ems="10"
-        android:hint="Email Id"
+        android:hint="@string/email_id"
         android:inputType="textEmailAddress"
-        android:paddingLeft="15dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
         app:layout_constraintEnd_toEndOf="@+id/editTextText2"
         app:layout_constraintStart_toStartOf="@+id/editTextText2"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText2" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextText2"
+        android:autofillHints="Please input your email" />
 
     <EditText
         android:id="@+id/editTextNumberPassword"
@@ -80,12 +87,14 @@
         android:layout_marginTop="24dp"
         android:background="@drawable/edittextbackground"
         android:ems="10"
-        android:hint="Password"
+        android:hint="@string/password"
         android:inputType="numberPassword"
-        android:paddingLeft="15dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
         app:layout_constraintEnd_toEndOf="@+id/editTextTextEmailAddress"
         app:layout_constraintStart_toStartOf="@+id/editTextTextEmailAddress"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress"
+        android:autofillHints="Please input your password" />
 
     <Button
         android:id="@+id/button"
@@ -93,7 +102,7 @@
         android:layout_height="52dp"
         android:layout_marginTop="24dp"
         android:backgroundTint="#A6FFFFFF"
-        android:text="Sign Up"
+        android:text="@string/sign_up"
         android:textColor="@color/blackTextColor"
         app:cornerRadius="5dp"
         app:layout_constraintBottom_toBottomOf="parent"

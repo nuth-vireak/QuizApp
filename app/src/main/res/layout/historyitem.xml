@@ -5,26 +5,30 @@
     android:layout_height="wrap_content">
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="54dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
         android:gravity="center_vertical"
         android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+        app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
             android:id="@+id/imageView4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginRight="15dp"
-            app:srcCompat="@drawable/coin" />
+            android:layout_marginEnd="15dp"
+            app:srcCompat="@drawable/coin"
+            android:contentDescription="@string/coin_icon" />
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center_vertical"
@@ -34,7 +38,7 @@
                 android:id="@+id/textView4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="TextView"
+                android:text="@string/textview"
                 android:textColor="@color/textColorWhite"
                 android:textSize="16sp" />
 
@@ -42,7 +46,7 @@
                 android:id="@+id/Time"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="TextView"
+                android:text="@string/textview"
                 android:textColor="@color/textColorWhite"
                 android:textSize="12sp" />
         </LinearLayout>
@@ -51,8 +55,8 @@
             android:id="@+id/Coin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="15dp"
-            android:text="TextView"
+            android:layout_marginStart="15dp"
+            android:text="@string/textview"
             android:textColor="@color/textColorWhite" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

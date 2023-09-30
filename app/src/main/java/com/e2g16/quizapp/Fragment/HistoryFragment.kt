@@ -1,12 +1,11 @@
 package com.e2g16.quizapp.Fragment
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.e2g16.quizapp.R
 import com.e2g16.quizapp.adaptor.HistoryAdaptor
 import com.e2g16.quizapp.databinding.FragmentHistoryBinding
 import com.e2g16.quizapp.model.HistoryModelClass
@@ -31,7 +30,7 @@ class HistoryFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         binding.HistoryRecycleView.layoutManager = LinearLayoutManager(requireContext())
-        var adapter = HistoryAdaptor(ListHistory)
+        val adapter = HistoryAdaptor(ListHistory)
         binding.HistoryRecycleView.adapter = adapter
         binding.HistoryRecycleView.setHasFixedSize(true)
         // Inflate the layout for this fragment

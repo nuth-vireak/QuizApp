@@ -7,9 +7,9 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.GridLayoutManager
 import com.e2g16.quizapp.R
-import com.e2g16.quizapp.adaptor.categoryadaptor
+import com.e2g16.quizapp.adaptor.CategoryAdaptor
 import com.e2g16.quizapp.databinding.FragmentHomeBinding
-import com.e2g16.quizapp.model.categoryModelClass
+import com.e2g16.quizapp.model.CategoryModelClass
 
 
 class HomeFragment : Fragment() {
@@ -18,7 +18,7 @@ class HomeFragment : Fragment() {
         FragmentHomeBinding.inflate(layoutInflater)
     }
 
-    private var categoryList = ArrayList<categoryModelClass>()
+    private var categoryList = ArrayList<CategoryModelClass>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -34,13 +34,13 @@ class HomeFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        categoryList.add(categoryModelClass(R.drawable.scince, "Science"))
-        categoryList.add(categoryModelClass(R.drawable.englishs, "English"))
-        categoryList.add(categoryModelClass(R.drawable.englishs, "history"))
-        categoryList.add(categoryModelClass(R.drawable.mathmetic, "mathematics"))
+        categoryList.add(CategoryModelClass(R.drawable.scince, "Science"))
+        categoryList.add(CategoryModelClass(R.drawable.englishs, "English"))
+        categoryList.add(CategoryModelClass(R.drawable.englishs, "history"))
+        categoryList.add(CategoryModelClass(R.drawable.mathmetic, "mathematics"))
 
         binding.categoryRecyclerView.layoutManager = GridLayoutManager(requireContext(), 2)
-        var adapter = categoryadaptor(categoryList)
+        var adapter = CategoryAdaptor(categoryList)
         binding.categoryRecyclerView.adapter = adapter
         binding.categoryRecyclerView.setHasFixedSize(true)
     }

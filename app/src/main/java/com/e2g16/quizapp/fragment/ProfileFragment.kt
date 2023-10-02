@@ -1,4 +1,4 @@
-package com.e2g16.quizapp.Fragment
+package com.e2g16.quizapp.fragment
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

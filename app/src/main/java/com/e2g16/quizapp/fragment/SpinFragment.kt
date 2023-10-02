@@ -1,6 +1,5 @@
-package com.e2g16.quizapp.Fragment
+package com.e2g16.quizapp.fragment
 
-import android.content.IntentSender.OnFinished
 import android.os.Bundle
 import android.os.CountDownTimer
 import android.view.LayoutInflater
@@ -8,7 +7,9 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
+import com.e2g16.quizapp.Withdrawal
 import com.e2g16.quizapp.databinding.FragmentSpinBinding
+import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import java.util.Random
 
 class SpinFragment : Fragment() {
@@ -29,12 +30,22 @@ class SpinFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        binding.CoinWithdrawal.setOnClickListener {
+            var bottomSheetDialog: BottomSheetDialogFragment = Withdrawal()
+            bottomSheetDialog.show(requireActivity().supportFragmentManager, "TEST")
+            bottomSheetDialog.enterTransition
+        }
+        binding.CoinWithdrawal1.setOnClickListener {
+            var bottomSheetDialog: BottomSheetDialogFragment = Withdrawal()
+            bottomSheetDialog.show(requireActivity().supportFragmentManager, "TEST")
+            bottomSheetDialog.enterTransition
+        }
 
         binding.Spin.setOnClickListener{
             binding.Spin.isEnabled = false
 
-            val spin = Random().nextInt(6)
-            val degrees = 60f * spin
+            var spin = Random().nextInt(6)
+            var degrees = 60f * spin
 
             timer = object : CountDownTimer(5000, 50){
                 var rotation = 0f

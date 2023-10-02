@@ -1,4 +1,4 @@
-package com.e2g16.quizapp.Fragment
+package com.e2g16.quizapp.fragment
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,9 +7,11 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.GridLayoutManager
 import com.e2g16.quizapp.R
+import com.e2g16.quizapp.Withdrawal
 import com.e2g16.quizapp.adaptor.CategoryAdaptor
 import com.e2g16.quizapp.databinding.FragmentHomeBinding
 import com.e2g16.quizapp.model.CategoryModelClass
+import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 
 
 class HomeFragment : Fragment() {
@@ -29,6 +31,16 @@ class HomeFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+        binding.CoinWithdrawal.setOnClickListener {
+            var bottomSheetDialog:BottomSheetDialogFragment = Withdrawal()
+            bottomSheetDialog.show(requireActivity().supportFragmentManager, "TEST")
+            bottomSheetDialog.enterTransition
+        }
+        binding.CoinWithdrawal1.setOnClickListener {
+            var bottomSheetDialog: BottomSheetDialogFragment = Withdrawal()
+            bottomSheetDialog.show(requireActivity().supportFragmentManager, "TEST")
+            bottomSheetDialog.enterTransition
+        }
         return binding.root
     }
 

@@ -7,22 +7,22 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.e2g16.quizapp.Fragment.HomeFragment"
+        android:name="com.e2g16.quizapp.fragment.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" />
     <fragment
         android:id="@+id/spinFragment"
-        android:name="com.e2g16.quizapp.Fragment.SpinFragment"
+        android:name="com.e2g16.quizapp.fragment.SpinFragment"
         android:label="fragment_spin"
         tools:layout="@layout/fragment_spin" />
     <fragment
         android:id="@+id/profileFragment"
-        android:name="com.e2g16.quizapp.Fragment.ProfileFragment"
+        android:name="com.e2g16.quizapp.fragment.ProfileFragment"
         android:label="fragment_profile"
         tools:layout="@layout/fragment_profile" />
     <fragment
         android:id="@+id/historyFragment"
-        android:name="com.e2g16.quizapp.Fragment.HistoryFragment"
+        android:name="com.e2g16.quizapp.fragment.HistoryFragment"
         android:label="fragment_history"
         tools:layout="@layout/fragment_history" />
 </navigation>

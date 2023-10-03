@@ -27,7 +27,7 @@
         android:layout_marginStart="32dp"
         android:fontFamily="@font/poppins_bold"
         android:text="@string/sign_up"
-        android:textColor="@color/textColorWhite"
+        android:textColor="?attr/colorPrimaryDark"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -46,6 +46,7 @@
         android:inputType="text"
         android:paddingStart="15dp"
         android:paddingEnd="15dp"
+        android:textColorHint="?android:attr/textColorHighlight"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
@@ -63,6 +64,7 @@
         android:inputType="text"
         android:paddingStart="15dp"
         android:paddingEnd="15dp"
+        android:textColorHint="?android:attr/textColorHighlight"
         app:layout_constraintEnd_toEndOf="@+id/editTextText"
         app:layout_constraintStart_toStartOf="@+id/editTextText"
         app:layout_constraintTop_toBottomOf="@+id/editTextText" />
@@ -80,6 +82,7 @@
         android:inputType="textEmailAddress"
         android:paddingStart="15dp"
         android:paddingEnd="15dp"
+        android:textColorHint="?android:attr/textColorHighlight"
         app:layout_constraintEnd_toEndOf="@+id/editTextText2"
         app:layout_constraintStart_toStartOf="@+id/editTextText2"
         app:layout_constraintTop_toBottomOf="@+id/editTextText2" />
@@ -97,6 +100,7 @@
         android:inputType="numberPassword"
         android:paddingStart="15dp"
         android:paddingEnd="15dp"
+        android:textColorHint="?android:attr/textColorHighlight"
         app:layout_constraintEnd_toEndOf="@+id/editTextTextEmailAddress"
         app:layout_constraintStart_toStartOf="@+id/editTextTextEmailAddress"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
@@ -109,7 +113,7 @@
         android:backgroundTint="#A6FFFFFF"
         android:fontFamily="@font/poppins_bold"
         android:text="@string/sign_up"
-        android:textColor="@color/blackTextColor"
+        android:textColor="?attr/colorPrimaryDark"
         app:cornerRadius="5dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

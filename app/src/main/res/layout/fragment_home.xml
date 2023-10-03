@@ -39,7 +39,7 @@
                 android:layout_weight="1"
                 android:fontFamily="@font/poppins_bold"
                 android:text="@string/textview"
-                android:textColor="@color/textColorWhite"
+                android:textColor="?attr/colorPrimaryDark"
                 android:textStyle="bold" />
 
             <ImageView
@@ -55,7 +55,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/poppins_bold"
                 android:text="@string/textviewCoin"
-                android:textColor="@color/textColorWhite"
+                android:textColor="?attr/colorPrimaryDark"
                 android:textStyle="bold" />
         </LinearLayout>
 
@@ -64,7 +64,7 @@
             android:layout_width="match_parent"
             android:layout_height="54dp"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="28dp"
+            android:layout_marginTop="36dp"
             android:layout_marginEnd="8dp"
             android:background="@drawable/textviewshap"
             android:fontFamily="@font/poppins_bold"
@@ -72,10 +72,10 @@
             android:paddingStart="15dp"
             android:paddingEnd="15dp"
             android:text="@string/category"
-            android:textColor="@color/textColorWhite"
+            android:textColor="?android:attr/textColorHighlight"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="@+id/linearLayout"
-            app:layout_constraintHorizontal_bias="0.023"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/linearLayout"
             app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 

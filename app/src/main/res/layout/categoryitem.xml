@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/categorybtn"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_margin="10dp"
@@ -15,11 +16,11 @@
             android:id="@+id/categoryImage"
             android:layout_width="0dp"
             android:layout_height="200dp"
+            android:contentDescription="@string/categoryimage"
             android:scaleType="centerCrop"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/englishs"
-            android:contentDescription="@string/categoryimage" />
+            app:srcCompat="@drawable/englishs" />
 
         <TextView
             android:id="@+id/category"

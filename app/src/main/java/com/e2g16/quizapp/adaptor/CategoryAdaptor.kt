@@ -5,14 +5,27 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.e2g16.quizapp.databinding.CategoryitemBinding
 import com.e2g16.quizapp.model.CategoryModelClass
+import android.content.Intent
+import androidx.fragment.app.FragmentActivity
+import com.e2g16.quizapp.QuizActivity
 
-class CategoryAdaptor(var categoryList: ArrayList<CategoryModelClass>) : RecyclerView.Adapter<CategoryAdaptor.MyCategoryViewHolder>() {
-    class MyCategoryViewHolder(var binding: CategoryitemBinding) :RecyclerView.ViewHolder(binding.root) {
+class CategoryAdaptor(
+    var categoryList: ArrayList<CategoryModelClass>,
+    var requireActivity: FragmentActivity
+) : RecyclerView.Adapter<CategoryAdaptor.MyCategoryViewHolder>() {
+    class MyCategoryViewHolder(var binding: CategoryitemBinding) :
+        RecyclerView.ViewHolder(binding.root) {
 
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyCategoryViewHolder {
-        return MyCategoryViewHolder(CategoryitemBinding.inflate(LayoutInflater.from(parent.context),parent, false))
+        return MyCategoryViewHolder(
+            CategoryitemBinding.inflate(
+                LayoutInflater.from(parent.context),
+                parent,
+                false
+            )
+        )
     }
 
     override fun getItemCount() = categoryList.size
@@ -21,6 +34,11 @@ class CategoryAdaptor(var categoryList: ArrayList<CategoryModelClass>) : Recycle
         var datelist = categoryList[position]
         holder.binding.categoryImage.setImageResource(datelist.catImage)
         holder.binding.category.text = datelist.catText
-    }
+        holder.binding.categorybtn.setOnClickListener {
 
+            var intent = Intent(requireActivity, QuizActivity::class.java)
+            intent.putExtra("categoryimg", datelist.catImage)
+            requireActivity.startActivity(intent)
+        }
+    }
 }

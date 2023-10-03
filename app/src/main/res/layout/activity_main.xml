@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
-    tools:context=".MainActivity" >
+    android:background="@drawable/login_1"
+    tools:context=".MainActivity">
 
     <ImageView
         android:id="@+id/imageView2"
@@ -13,18 +13,19 @@
         android:layout_height="150dp"
         android:layout_marginTop="100dp"
         android:layout_marginEnd="32dp"
+        android:contentDescription="@string/question_logo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/question"
-        android:contentDescription="@string/question_logo" />
+        app:srcCompat="@drawable/question" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
+        android:fontFamily="@font/poppins_bold"
         android:text="@string/sign_up"
         android:textColor="@color/textColorWhite"
         app:layout_constraintEnd_toEndOf="parent"
@@ -37,64 +38,68 @@
         android:layout_width="350dp"
         android:layout_height="52dp"
         android:layout_marginTop="24dp"
+        android:autofillHints="Please input your name"
         android:background="@drawable/edittextbackground"
         android:ems="10"
+        android:fontFamily="@font/poppins_regular"
         android:hint="@string/your_name"
         android:inputType="text"
         android:paddingStart="15dp"
         android:paddingEnd="15dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3"
-        android:autofillHints="Please input your name" />
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <EditText
         android:id="@+id/editTextText2"
         android:layout_width="350dp"
         android:layout_height="52dp"
         android:layout_marginTop="24dp"
+        android:autofillHints="Please input your age"
         android:background="@drawable/edittextbackground"
         android:ems="10"
+        android:fontFamily="@font/poppins_regular"
         android:hint="@string/age"
         android:inputType="text"
         android:paddingStart="15dp"
         android:paddingEnd="15dp"
         app:layout_constraintEnd_toEndOf="@+id/editTextText"
         app:layout_constraintStart_toStartOf="@+id/editTextText"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText"
-        android:autofillHints="Please input your age" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextText" />
 
     <EditText
         android:id="@+id/editTextTextEmailAddress"
         android:layout_width="350dp"
         android:layout_height="52dp"
         android:layout_marginTop="24dp"
+        android:autofillHints="Please input your email"
         android:background="@drawable/edittextbackground"
         android:ems="10"
+        android:fontFamily="@font/poppins_regular"
         android:hint="@string/email_id"
         android:inputType="textEmailAddress"
         android:paddingStart="15dp"
         android:paddingEnd="15dp"
         app:layout_constraintEnd_toEndOf="@+id/editTextText2"
         app:layout_constraintStart_toStartOf="@+id/editTextText2"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText2"
-        android:autofillHints="Please input your email" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextText2" />
 
     <EditText
         android:id="@+id/editTextNumberPassword"
         android:layout_width="350dp"
         android:layout_height="52dp"
         android:layout_marginTop="24dp"
+        android:autofillHints="Please input your password"
         android:background="@drawable/edittextbackground"
         android:ems="10"
+        android:fontFamily="@font/poppins_regular"
         android:hint="@string/password"
         android:inputType="numberPassword"
         android:paddingStart="15dp"
         android:paddingEnd="15dp"
         app:layout_constraintEnd_toEndOf="@+id/editTextTextEmailAddress"
         app:layout_constraintStart_toStartOf="@+id/editTextTextEmailAddress"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress"
-        android:autofillHints="Please input your password" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
 
     <Button
         android:id="@+id/button"
@@ -102,6 +107,7 @@
         android:layout_height="52dp"
         android:layout_marginTop="24dp"
         android:backgroundTint="#A6FFFFFF"
+        android:fontFamily="@font/poppins_bold"
         android:text="@string/sign_up"
         android:textColor="@color/blackTextColor"
         app:cornerRadius="5dp"

@@ -38,6 +38,7 @@
                 android:id="@+id/textView4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
                 android:text="@string/textview"
                 android:textColor="@color/textColorWhite"
                 android:textSize="16sp" />
@@ -46,6 +47,7 @@
                 android:id="@+id/Time"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_light"
                 android:text="@string/textview"
                 android:textColor="@color/textColorWhite"
                 android:textSize="12sp" />
@@ -56,6 +58,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="15dp"
+            android:fontFamily="@font/poppins_extrabold"
             android:text="@string/textview"
             android:textColor="@color/textColorWhite" />
     </LinearLayout>

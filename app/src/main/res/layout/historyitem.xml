@@ -40,7 +40,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/poppins_bold"
                 android:text="@string/textview"
-                android:textColor="@color/textColorWhite"
+                android:textColor="?attr/colorPrimaryDark"
                 android:textSize="16sp" />
 
             <TextView
@@ -49,7 +49,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/poppins_light"
                 android:text="@string/textview"
-                android:textColor="@color/textColorWhite"
+                android:textColor="?attr/colorPrimaryDark"
                 android:textSize="12sp" />
         </LinearLayout>
 
@@ -60,6 +60,6 @@
             android:layout_marginStart="15dp"
             android:fontFamily="@font/poppins_extrabold"
             android:text="@string/textview"
-            android:textColor="@color/textColorWhite" />
+            android:textColor="?attr/colorPrimaryDark" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

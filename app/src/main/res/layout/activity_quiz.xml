@@ -35,7 +35,7 @@
             android:layout_weight="1"
             android:fontFamily="@font/poppins_bold"
             android:text="@string/textview"
-            android:textColor="@color/textColorWhite"
+            android:textColor="?attr/colorPrimaryDark"
             android:textStyle="bold" />
 
         <ImageView
@@ -51,7 +51,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/poppins_bold"
             android:text="@string/textview"
-            android:textColor="@color/textColorWhite"
+            android:textColor="?attr/colorPrimaryDark"
             android:textStyle="bold" />
 
     </LinearLayout>
@@ -73,7 +73,7 @@
         android:layout_marginTop="15dp"
         android:fontFamily="@font/poppins_bold"
         android:text="Question :"
-        android:textColor="@color/white"
+        android:textColor="?attr/colorPrimaryDark"
         app:layout_constraintEnd_toEndOf="@+id/categoryimg"
         app:layout_constraintStart_toStartOf="@+id/categoryimg"
         app:layout_constraintTop_toBottomOf="@+id/categoryimg" />
@@ -85,7 +85,7 @@
         android:layout_marginTop="15dp"
         android:fontFamily="@font/poppins_bold"
         android:text="What is Your Name?"
-        android:textColor="@color/white"
+        android:textColor="?attr/colorPrimaryDark"
         app:layout_constraintEnd_toEndOf="@+id/textView21"
         app:layout_constraintStart_toStartOf="@+id/textView21"
         app:layout_constraintTop_toBottomOf="@+id/textView21" />
@@ -97,7 +97,7 @@
         android:layout_marginTop="15dp"
         android:fontFamily="@font/poppins_bold"
         android:text="Select One Of This"
-        android:textColor="@color/white"
+        android:textColor="?attr/colorPrimaryDark"
         app:layout_constraintEnd_toEndOf="@+id/textView22"
         app:layout_constraintStart_toStartOf="@+id/textView22"
         app:layout_constraintTop_toBottomOf="@+id/textView22" />
@@ -112,7 +112,7 @@
         android:backgroundTint="@color/buttonWhite"
         android:fontFamily="@font/poppins_regular"
         android:text="Option 1"
-        android:textColor="@color/blackTextColor"
+        android:textColor="?android:attr/colorEdgeEffect"
         app:cornerRadius="10dp"
         app:layout_constraintEnd_toEndOf="@+id/textView23"
         app:layout_constraintStart_toStartOf="@+id/textView23"
@@ -128,7 +128,7 @@
         android:backgroundTint="@color/buttonWhite"
         android:fontFamily="@font/poppins_regular"
         android:text="Option 2"
-        android:textColor="@color/blackTextColor"
+        android:textColor="?android:attr/colorEdgeEffect"
         app:cornerRadius="10dp"
         app:layout_constraintEnd_toEndOf="@+id/option1"
         app:layout_constraintStart_toStartOf="@+id/option1"
@@ -144,7 +144,7 @@
         android:backgroundTint="@color/buttonWhite"
         android:fontFamily="@font/poppins_regular"
         android:text="Option 3"
-        android:textColor="@color/blackTextColor"
+        android:textColor="?android:attr/colorEdgeEffect"
         app:cornerRadius="10dp"
         app:layout_constraintEnd_toEndOf="@+id/opytion2"
         app:layout_constraintStart_toStartOf="@+id/opytion2"
@@ -160,7 +160,7 @@
         android:backgroundTint="@color/buttonWhite"
         android:fontFamily="@font/poppins_regular"
         android:text=" Option 4"
-        android:textColor="@color/blackTextColor"
+        android:textColor="?android:attr/colorEdgeEffect"
         app:cornerRadius="10dp"
         app:layout_constraintEnd_toEndOf="@+id/option3"
         app:layout_constraintStart_toStartOf="@+id/option3"
@@ -173,7 +173,7 @@
         android:backgroundTint="@color/buttonWhite"
         android:fontFamily="@font/poppins_bold"
         android:text="NextOption"
-        android:textColor="@color/blackTextColor"
+        android:textColor="?android:attr/colorEdgeEffect"
         app:cornerRadius="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

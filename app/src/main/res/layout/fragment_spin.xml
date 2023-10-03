@@ -39,7 +39,7 @@
                 android:layout_weight="1"
                 android:fontFamily="@font/poppins_bold"
                 android:text="@string/textview"
-                android:textColor="@color/textColorWhite"
+                android:textColor="?attr/colorPrimaryDark"
                 android:textStyle="bold" />
 
             <ImageView
@@ -55,7 +55,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/poppins_bold"
                 android:text="@string/textview"
-                android:textColor="@color/textColorWhite"
+                android:textColor="?attr/colorPrimaryDark"
                 android:textStyle="bold" />
 
         </LinearLayout>
@@ -67,7 +67,7 @@
             android:layout_marginTop="100dp"
             android:fontFamily="@font/poppins_extrabold"
             android:text="@string/left_chance"
-            android:textColor="@color/textColorWhite"
+            android:textColor="?android:attr/colorEdgeEffect"
             android:textSize="24sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="@+id/linearLayout"
@@ -78,8 +78,9 @@
             android:id="@+id/textView7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
             android:text="@string/_1"
-            android:textColor="@color/textColorWhite"
+            android:textColor="?android:attr/colorEdgeEffect"
             android:textSize="24sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="@+id/textView5"
@@ -127,7 +128,7 @@
             android:backgroundTint="@color/buttonWhite"
             android:fontFamily="@font/poppins_bold"
             android:text="@string/spin"
-            android:textColor="@color/blackTextColor"
+            android:textColor="?android:attr/colorEdgeEffect"
             app:cornerRadius="10dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@+id/imageView3"

@@ -16,9 +16,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="32dp"
-            android:fontFamily="@font/poppins_bold"
+            android:fontFamily="@font/poppins_extrabold"
             android:text="Withdrawal Money"
-            android:textColor="@color/black"
+            android:textColor="?android:attr/colorEdgeEffect"
             android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -31,7 +31,7 @@
             android:layout_marginTop="15dp"
             android:fontFamily="@font/poppins_bold"
             android:text="TotalCoin :"
-            android:textColor="@color/black"
+            android:textColor="?android:attr/colorEdgeEffect"
             app:layout_constraintEnd_toEndOf="@+id/textView9"
             app:layout_constraintStart_toStartOf="@+id/textView9"
             app:layout_constraintTop_toBottomOf="@+id/textView9" />
@@ -42,7 +42,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/poppins_extrabold"
             android:text="5000"
-            android:textColor="@color/textColorWhite"
+            android:textColor="#EAB71A"
             app:layout_constraintBottom_toBottomOf="@+id/textView17"
             app:layout_constraintStart_toEndOf="@+id/textView17"
             app:layout_constraintTop_toTopOf="@+id/textView17" />
@@ -54,7 +54,7 @@
             android:layout_marginTop="15dp"
             android:fontFamily="@font/poppins_bold"
             android:text="1000 Coin = Rs 10"
-            android:textColor="@color/black"
+            android:textColor="?android:attr/colorEdgeEffect"
             app:layout_constraintEnd_toEndOf="@+id/textView17"
             app:layout_constraintStart_toStartOf="@+id/textView17"
             app:layout_constraintTop_toBottomOf="@+id/textView17" />
@@ -66,7 +66,7 @@
             android:layout_marginTop="15dp"
             android:fontFamily="@font/poppins_bold"
             android:text="Minimum 60 Rs Maximim 100Rs"
-            android:textColor="@color/black"
+            android:textColor="?android:attr/colorEdgeEffect"
             app:layout_constraintEnd_toEndOf="@+id/textView18"
             app:layout_constraintStart_toStartOf="@+id/textView18"
             app:layout_constraintTop_toBottomOf="@+id/textView18" />
@@ -84,6 +84,7 @@
             android:hint="Enter Amount"
             android:inputType="text"
             android:paddingStart="15dp"
+            android:textColorHint="?android:attr/textColorHighlight"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView19" />
@@ -101,6 +102,7 @@
             android:hint="Enter PayTm Number"
             android:inputType="text"
             android:paddingStart="15dp"
+            android:textColorHint="?android:attr/textColorHighlight"
             app:layout_constraintEnd_toEndOf="@+id/editTextText3"
             app:layout_constraintStart_toStartOf="@+id/editTextText3"
             app:layout_constraintTop_toBottomOf="@+id/editTextText3" />
@@ -113,7 +115,7 @@
             android:backgroundTint="@color/buttonWhite"
             android:fontFamily="@font/poppins_bold"
             android:text="Transfer Amount"
-            android:textColor="@color/blackTextColor"
+            android:textColor="?android:attr/colorEdgeEffect"
             app:cornerRadius="10dp"
             app:layout_constraintEnd_toEndOf="@+id/editTextText4"
             app:layout_constraintStart_toStartOf="@+id/editTextText4"

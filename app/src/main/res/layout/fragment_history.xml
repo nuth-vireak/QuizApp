@@ -39,7 +39,7 @@
                 android:layout_weight="1"
                 android:fontFamily="@font/poppins_bold"
                 android:text="@string/textview"
-                android:textColor="@color/textColorWhite"
+                android:textColor="?attr/colorPrimaryDark"
                 android:textStyle="bold" />
 
             <ImageView
@@ -55,7 +55,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/poppins_bold"
                 android:text="@string/textview"
-                android:textColor="@color/textColorWhite"
+                android:textColor="?attr/colorPrimaryDark"
                 android:textStyle="bold" />
 
         </LinearLayout>

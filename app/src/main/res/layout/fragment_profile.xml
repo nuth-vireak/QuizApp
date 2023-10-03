@@ -40,6 +40,7 @@
                     android:layout_marginTop="8dp"
                     android:fontFamily="@font/poppins_extrabold"
                     android:text="TextView"
+                    android:textColor="?attr/colorPrimaryDark"
                     app:layout_constraintEnd_toEndOf="@+id/imageView6"
                     app:layout_constraintStart_toStartOf="@+id/imageView6"
                     app:layout_constraintTop_toBottomOf="@+id/imageView6" />
@@ -64,7 +65,8 @@
                         android:layout_marginStart="15dp"
                         android:layout_weight="1"
                         android:fontFamily="@font/poppins_bold"
-                        android:text="Personal Information" />
+                        android:text="Personal Information"
+                        android:textColor="?attr/colorPrimaryDark" />
 
                     <ImageButton
                         android:id="@+id/imageButton"
@@ -94,7 +96,7 @@
                         android:backgroundTint="@color/buttonWhite"
                         android:fontFamily="@font/poppins_regular"
                         android:text="Save"
-                        android:textColor="@color/black"
+                        android:textColor="?attr/colorPrimaryDark"
                         app:cornerRadius="10dp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="@+id/linearLayout7"
@@ -123,7 +125,8 @@
                             android:layout_width="80dp"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/poppins_bold"
-                            android:text="Age" />
+                            android:text="Age"
+                            android:textColor="?android:attr/colorEdgeEffect" />
 
                         <TextView
                             android:id="@+id/age"
@@ -132,7 +135,8 @@
                             android:layout_marginStart="15dp"
                             android:layout_weight="1"
                             android:fontFamily="@font/poppins_regular"
-                            android:text="22" />
+                            android:text="22"
+                            android:textColor="?android:attr/textColorHighlight" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -156,7 +160,8 @@
                             android:layout_width="80dp"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/poppins_bold"
-                            android:text="Country" />
+                            android:text="Country"
+                            android:textColor="?android:attr/colorEdgeEffect" />
 
                         <TextView
                             android:id="@+id/textView11"
@@ -165,7 +170,8 @@
                             android:layout_marginStart="15dp"
                             android:layout_weight="1"
                             android:fontFamily="@font/poppins_regular"
-                            android:text="India" />
+                            android:text="India"
+                            android:textColor="?android:attr/textColorHighlight" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -189,7 +195,8 @@
                             android:layout_width="80dp"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/poppins_bold"
-                            android:text="Email" />
+                            android:text="Email"
+                            android:textColor="?android:attr/colorEdgeEffect" />
 
                         <TextView
                             android:id="@+id/Email"
@@ -198,7 +205,8 @@
                             android:layout_marginStart="15dp"
                             android:layout_weight="1"
                             android:fontFamily="@font/poppins_regular"
-                            android:text="admin@gamil.com" />
+                            android:text="admin@gamil.com"
+                            android:textColor="?android:attr/textColorHighlight" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -220,7 +228,8 @@
                             android:layout_width="80dp"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/poppins_bold"
-                            android:text="Name" />
+                            android:text="Name"
+                            android:textColor="?android:attr/colorEdgeEffect" />
 
                         <TextView
                             android:id="@+id/Name"
@@ -229,7 +238,8 @@
                             android:layout_marginStart="15dp"
                             android:layout_weight="1"
                             android:fontFamily="@font/poppins_regular"
-                            android:text="name" />
+                            android:text="name"
+                            android:textColor="?android:attr/textColorHighlight" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -252,7 +262,8 @@
                             android:layout_width="80dp"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/poppins_bold"
-                            android:text="Password" />
+                            android:text="Password"
+                            android:textColor="?android:attr/colorEdgeEffect" />
 
                         <TextView
                             android:id="@+id/passwoord"
@@ -261,7 +272,8 @@
                             android:layout_marginStart="15dp"
                             android:layout_weight="1"
                             android:fontFamily="@font/poppins_regular"
-                            android:text="********" />
+                            android:text="********"
+                            android:textColor="?android:attr/textColorHighlight" />
                     </LinearLayout>
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
@@ -273,7 +285,7 @@
                     android:backgroundTint="@color/buttonWhite"
                     android:fontFamily="@font/poppins_regular"
                     android:text="Button"
-                    android:textColor="@color/black"
+                    android:textColor="?attr/colorPrimaryDark"
                     app:cornerRadius="10dp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"

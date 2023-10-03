@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@drawable/secondbackground"
+    android:background="@drawable/spin__1_"
     tools:context=".fragment.SpinFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -29,14 +29,15 @@
                 android:layout_width="35dp"
                 android:layout_height="35dp"
                 android:layout_marginEnd="10dp"
-                app:srcCompat="@drawable/avtar"
-                android:contentDescription="@string/spin_container" />
+                android:contentDescription="@string/spin_container"
+                app:srcCompat="@drawable/avtar" />
 
             <TextView
                 android:id="@+id/Name"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:fontFamily="@font/poppins_bold"
                 android:text="@string/textview"
                 android:textColor="@color/textColorWhite"
                 android:textStyle="bold" />
@@ -45,13 +46,14 @@
                 android:id="@+id/CoinWithdrawal1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:srcCompat="@drawable/coin"
-                android:contentDescription="@string/coin_icon" />
+                android:contentDescription="@string/coin_icon"
+                app:srcCompat="@drawable/coin" />
 
             <TextView
                 android:id="@+id/CoinWithdrawal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
                 android:text="@string/textview"
                 android:textColor="@color/textColorWhite"
                 android:textStyle="bold" />
@@ -63,6 +65,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="100dp"
+            android:fontFamily="@font/poppins_extrabold"
             android:text="@string/left_chance"
             android:textColor="@color/textColorWhite"
             android:textSize="24sp"
@@ -87,34 +90,34 @@
             android:id="@+id/imageView3"
             android:layout_width="300dp"
             android:layout_height="300dp"
+            android:contentDescription="@string/spin_vector"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView5"
-            app:srcCompat="@drawable/backgroundwheel"
-            android:contentDescription="@string/spin_vector" />
+            app:srcCompat="@drawable/backgroundwheel" />
 
         <ImageView
             android:id="@+id/wheel"
             android:layout_width="180dp"
             android:layout_height="200dp"
+            android:contentDescription="@string/spin_rotation"
             app:layout_constraintBottom_toBottomOf="@+id/imageView3"
             app:layout_constraintEnd_toEndOf="@+id/imageView3"
             app:layout_constraintStart_toStartOf="@+id/imageView3"
             app:layout_constraintTop_toBottomOf="@+id/textView5"
             app:layout_constraintVertical_bias="0.19999999"
-            app:srcCompat="@drawable/mainspin"
-            android:contentDescription="@string/spin_rotation" />
+            app:srcCompat="@drawable/mainspin" />
 
         <ImageView
             android:id="@+id/imageView5"
             android:layout_width="50dp"
             android:layout_height="50dp"
+            android:contentDescription="@string/spin_clock"
             app:layout_constraintBottom_toBottomOf="@+id/wheel"
             app:layout_constraintEnd_toEndOf="@+id/wheel"
             app:layout_constraintStart_toStartOf="@+id/wheel"
             app:layout_constraintTop_toTopOf="@+id/wheel"
-            app:srcCompat="@drawable/stoper"
-            android:contentDescription="@string/spin_clock" />
+            app:srcCompat="@drawable/stoper" />
 
         <Button
             android:id="@+id/Spin"
@@ -122,6 +125,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
             android:backgroundTint="@color/buttonWhite"
+            android:fontFamily="@font/poppins_bold"
             android:text="@string/spin"
             android:textColor="@color/blackTextColor"
             app:cornerRadius="10dp"

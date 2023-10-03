@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/secondbackground"
+    android:background="@drawable/home_1"
     tools:context=".fragment.HomeFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -29,14 +29,15 @@
                 android:layout_width="35dp"
                 android:layout_height="35dp"
                 android:layout_marginEnd="10dp"
-                app:srcCompat="@drawable/avtar"
-                android:contentDescription="@string/profile_avatar" />
+                android:contentDescription="@string/profile_avatar"
+                app:srcCompat="@drawable/avtar" />
 
             <TextView
                 android:id="@+id/Name"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:fontFamily="@font/poppins_bold"
                 android:text="@string/textview"
                 android:textColor="@color/textColorWhite"
                 android:textStyle="bold" />
@@ -45,13 +46,14 @@
                 android:id="@+id/CoinWithdrawal1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:srcCompat="@drawable/coin"
-                android:contentDescription="@string/coin_icon" />
+                android:contentDescription="@string/coin_icon"
+                app:srcCompat="@drawable/coin" />
 
             <TextView
                 android:id="@+id/CoinWithdrawal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
                 android:text="@string/textviewCoin"
                 android:textColor="@color/textColorWhite"
                 android:textStyle="bold" />
@@ -65,6 +67,7 @@
             android:layout_marginTop="28dp"
             android:layout_marginEnd="8dp"
             android:background="@drawable/textviewshap"
+            android:fontFamily="@font/poppins_bold"
             android:gravity="center_vertical"
             android:paddingStart="15dp"
             android:paddingEnd="15dp"

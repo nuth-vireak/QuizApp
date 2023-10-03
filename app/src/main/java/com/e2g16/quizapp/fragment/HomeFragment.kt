@@ -22,10 +22,10 @@ class HomeFragment : Fragment() {
     private var categoryList = ArrayList<CategoryModelClass>()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        categoryList.add(CategoryModelClass(R.drawable.scince, "Science"))
-        categoryList.add(CategoryModelClass(R.drawable.englishs, "English"))
-        categoryList.add(CategoryModelClass(R.drawable.englishs, "history"))
-        categoryList.add(CategoryModelClass(R.drawable.mathmetic, "mathematics"))
+        categoryList.add(CategoryModelClass(R.drawable.scince1, "Science"))
+        categoryList.add(CategoryModelClass(R.drawable.english1, "English"))
+        categoryList.add(CategoryModelClass(R.drawable.geography, "geography"))
+        categoryList.add(CategoryModelClass(R.drawable.math, "math"))
     }
     override fun onCreateView(
         inflater: LayoutInflater,

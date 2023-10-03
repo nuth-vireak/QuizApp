@@ -19,20 +19,21 @@ class HomeFragment : Fragment() {
     private val binding: FragmentHomeBinding by lazy {
         FragmentHomeBinding.inflate(layoutInflater)
     }
-
     private var categoryList = ArrayList<CategoryModelClass>()
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        categoryList.add(CategoryModelClass(R.drawable.scince, "Science"))
+        categoryList.add(CategoryModelClass(R.drawable.englishs, "English"))
+        categoryList.add(CategoryModelClass(R.drawable.englishs, "history"))
+        categoryList.add(CategoryModelClass(R.drawable.mathmetic, "mathematics"))
     }
-
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         binding.CoinWithdrawal.setOnClickListener {
-            var bottomSheetDialog:BottomSheetDialogFragment = Withdrawal()
+            var bottomSheetDialog: BottomSheetDialogFragment = Withdrawal()
             bottomSheetDialog.show(requireActivity().supportFragmentManager, "TEST")
             bottomSheetDialog.enterTransition
         }
@@ -46,61 +47,13 @@ class HomeFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        categoryList.add(CategoryModelClass(R.drawable.scince, "Science"))
-        categoryList.add(CategoryModelClass(R.drawable.englishs, "English"))
-        categoryList.add(CategoryModelClass(R.drawable.englishs, "history"))
-        categoryList.add(CategoryModelClass(R.drawable.mathmetic, "mathematics"))
 
         binding.categoryRecyclerView.layoutManager = GridLayoutManager(requireContext(), 2)
-        var adapter = CategoryAdaptor(categoryList)
+        var adapter = CategoryAdaptor(categoryList, requireActivity())
         binding.categoryRecyclerView.adapter = adapter
         binding.categoryRecyclerView.setHasFixedSize(true)
     }
-
     companion object {
 
     }
 }
-
-/* // fixed category list in home fragment that always update the list when the fragment is created
-class HomeFragment : Fragment() {
-
-    private val binding: FragmentHomeBinding by lazy {
-        FragmentHomeBinding.inflate(layoutInflater)
-    }
-
-    private var categoryList = ArrayList<categoryModelClass>()
-
-    override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        return binding.root
-    }
-
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-        setupCategoryList()
-    }
-
-    private fun setupCategoryList() {
-        categoryList.clear() // Clear the existing list
-        categoryList.add(categoryModelClass(R.drawable.scince, "Science"))
-        categoryList.add(categoryModelClass(R.drawable.englishs, "English"))
-        categoryList.add(categoryModelClass(R.drawable.englishs, "History"))
-        categoryList.add(categoryModelClass(R.drawable.mathmetic, "Mathematics"))
-
-        binding.categoryRecyclerView.layoutManager = GridLayoutManager(requireContext(), 2)
-        val adapter = categoryadaptor(categoryList)
-        binding.categoryRecyclerView.adapter = adapter
-        binding.categoryRecyclerView.setHasFixedSize(true)
-    }
-
-    override fun onResume() {
-        super.onResume()
-        // Update the category list when the fragment is resumed
-        setupCategoryList()
-    }
-}
-*/

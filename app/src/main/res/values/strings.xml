@@ -25,4 +25,26 @@
     <string name="spin_rotation">Spin rotation</string>
     <string name="spin_clock">Spin clock</string>
     <string name="spin_container">Spin Container</string>
+    <string name="question">Question :</string>
+    <string name="what_is_your_name">What is Your Name?</string>
+    <string name="select_one_of_this">Select One Of This</string>
+    <string name="option_1">Option 1</string>
+    <string name="option_2">Option 2</string>
+    <string name="option_3">Option 3</string>
+    <string name="option_4">Option 4</string>
+    <string name="nextoption">NextOption</string>
+    <string name="quiz_image">Quiz image</string>
+    <string name="arrow_icon">Arrow icon</string>
+    <string name="personal_information">Personal Information</string>
+    <string name="save">Save</string>
+    <string name="_22">22</string>
+    <string name="country">Country</string>
+    <string name="india">India</string>
+    <string name="email">Email</string>
+    <string name="admin_gamil_com">admin@gamil.com</string>
+    <string name="name">Name</string>
+    <string name="_name">name</string>
+    <string name="star_icon">********</string>
+    <string name="button">Button</string>
+    <string name="profile_image">Profile image</string>
 </resources>

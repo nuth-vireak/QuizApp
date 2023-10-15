@@ -34,7 +34,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/name"
         android:layout_width="350dp"
         android:layout_height="52dp"
         android:layout_marginTop="24dp"
@@ -52,7 +52,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <EditText
-        android:id="@+id/editTextText2"
+        android:id="@+id/age"
         android:layout_width="350dp"
         android:layout_height="52dp"
         android:layout_marginTop="24dp"
@@ -65,12 +65,12 @@
         android:paddingStart="15dp"
         android:paddingEnd="15dp"
         android:textColorHint="?android:attr/textColorHighlight"
-        app:layout_constraintEnd_toEndOf="@+id/editTextText"
-        app:layout_constraintStart_toStartOf="@+id/editTextText"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText" />
+        app:layout_constraintEnd_toEndOf="@+id/name"
+        app:layout_constraintStart_toStartOf="@+id/name"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress"
+        android:id="@+id/email"
         android:layout_width="350dp"
         android:layout_height="52dp"
         android:layout_marginTop="24dp"
@@ -83,12 +83,12 @@
         android:paddingStart="15dp"
         android:paddingEnd="15dp"
         android:textColorHint="?android:attr/textColorHighlight"
-        app:layout_constraintEnd_toEndOf="@+id/editTextText2"
-        app:layout_constraintStart_toStartOf="@+id/editTextText2"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText2" />
+        app:layout_constraintEnd_toEndOf="@+id/age"
+        app:layout_constraintStart_toStartOf="@+id/age"
+        app:layout_constraintTop_toBottomOf="@+id/age" />
 
     <EditText
-        android:id="@+id/editTextNumberPassword"
+        android:id="@+id/password"
         android:layout_width="350dp"
         android:layout_height="52dp"
         android:layout_marginTop="24dp"
@@ -101,12 +101,12 @@
         android:paddingStart="15dp"
         android:paddingEnd="15dp"
         android:textColorHint="?android:attr/textColorHighlight"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextEmailAddress"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextEmailAddress"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
+        app:layout_constraintEnd_toEndOf="@+id/email"
+        app:layout_constraintStart_toStartOf="@+id/email"
+        app:layout_constraintTop_toBottomOf="@+id/email" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/sign_up"
         android:layout_width="150dp"
         android:layout_height="52dp"
         android:layout_marginTop="24dp"
@@ -118,6 +118,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumberPassword"
+        app:layout_constraintTop_toBottomOf="@+id/password"
         app:layout_constraintVertical_bias="0.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>

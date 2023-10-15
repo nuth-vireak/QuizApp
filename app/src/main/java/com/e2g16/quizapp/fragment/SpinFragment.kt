@@ -27,7 +27,7 @@ class SpinFragment : Fragment() {
         Toast.makeText(requireContext(), itemTitle, Toast.LENGTH_SHORT).show()
         binding.Spin.isEnabled = true
     }
-
+ 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.CoinWithdrawal.setOnClickListener {

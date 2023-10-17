@@ -80,10 +80,10 @@
         app:layout_constraintTop_toBottomOf="@+id/categoryimg" />
 
     <TextView
-        android:id="@+id/textView22"
+        android:id="@+id/question"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="12dp"
         android:fontFamily="@font/poppins_bold"
         android:text="@string/what_is_your_name"
         android:textColor="?attr/colorPrimaryDark"
@@ -99,9 +99,9 @@
         android:fontFamily="@font/poppins_bold"
         android:text="@string/select_one_of_this"
         android:textColor="?attr/colorPrimaryDark"
-        app:layout_constraintEnd_toEndOf="@+id/textView22"
-        app:layout_constraintStart_toStartOf="@+id/textView22"
-        app:layout_constraintTop_toBottomOf="@+id/textView22" />
+        app:layout_constraintEnd_toEndOf="@+id/question"
+        app:layout_constraintStart_toStartOf="@+id/question"
+        app:layout_constraintTop_toBottomOf="@+id/question" />
 
     <Button
         android:id="@+id/option1"
@@ -120,7 +120,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView23" />
 
     <Button
-        android:id="@+id/opytion2"
+        android:id="@+id/option2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
@@ -147,12 +147,12 @@
         android:text="@string/option_3"
         android:textColor="?android:attr/colorEdgeEffect"
         app:cornerRadius="10dp"
-        app:layout_constraintEnd_toEndOf="@+id/opytion2"
-        app:layout_constraintStart_toStartOf="@+id/opytion2"
-        app:layout_constraintTop_toBottomOf="@+id/opytion2" />
+        app:layout_constraintEnd_toEndOf="@+id/option2"
+        app:layout_constraintStart_toStartOf="@+id/option2"
+        app:layout_constraintTop_toBottomOf="@+id/option2" />
 
     <Button
-        android:id="@+id/Option4"
+        android:id="@+id/option4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
@@ -166,19 +166,5 @@
         app:layout_constraintEnd_toEndOf="@+id/option3"
         app:layout_constraintStart_toStartOf="@+id/option3"
         app:layout_constraintTop_toBottomOf="@+id/option3" />
-
-    <Button
-        android:id="@+id/buttonNext"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:backgroundTint="@color/buttonWhite"
-        android:fontFamily="@font/poppins_bold"
-        android:text="@string/nextoption"
-        android:textColor="?android:attr/colorEdgeEffect"
-        app:cornerRadius="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Option4" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -9,7 +9,15 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.e2g16.quizapp.Withdrawal
 import com.e2g16.quizapp.databinding.FragmentSpinBinding
+import com.e2g16.quizapp.model.User
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.database.DataSnapshot
+import com.google.firebase.database.DatabaseError
+import com.google.firebase.database.ValueEventListener
+import com.google.firebase.database.ktx.database
+import com.google.firebase.database.ktx.getValue
+import com.google.firebase.ktx.Firebase
 import java.util.Random
 
 class SpinFragment : Fragment() {
@@ -20,6 +28,23 @@ class SpinFragment : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         binding = FragmentSpinBinding.inflate(inflater, container, false)
+
+        Firebase.database.reference.child("Users")
+            .child(Firebase.auth.currentUser!!.uid)
+            .addValueEventListener(
+                object : ValueEventListener {
+                    override fun onDataChange(snapshot: DataSnapshot) {
+                        var user = snapshot.getValue<User>()
+                        binding.name.text = user?.name
+                    }
+
+                    override fun onCancelled(error: DatabaseError) {
+                        TODO("Not yet implemented")
+                    }
+
+                }
+            )
+
         return binding.root
     }
 

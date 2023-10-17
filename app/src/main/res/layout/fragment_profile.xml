@@ -35,7 +35,7 @@
                     android:contentDescription="@string/profile_image" />
 
                 <TextView
-                    android:id="@+id/textView6"
+                    android:id="@+id/name_up"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
@@ -57,7 +57,7 @@
                     android:orientation="horizontal"
                     app:layout_constraintEnd_toEndOf="@+id/imageView6"
                     app:layout_constraintStart_toStartOf="@+id/imageView6"
-                    app:layout_constraintTop_toBottomOf="@+id/textView6">
+                    app:layout_constraintTop_toBottomOf="@+id/name_up">
 
                     <TextView
                         android:id="@+id/textView8"
@@ -201,7 +201,7 @@
                             android:textColor="?android:attr/colorEdgeEffect" />
 
                         <TextView
-                            android:id="@+id/Email"
+                            android:id="@+id/email"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="15dp"
@@ -234,7 +234,7 @@
                             android:textColor="?android:attr/colorEdgeEffect" />
 
                         <TextView
-                            android:id="@+id/Name"
+                            android:id="@+id/name"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="15dp"
@@ -268,7 +268,7 @@
                             android:textColor="?android:attr/colorEdgeEffect" />
 
                         <TextView
-                            android:id="@+id/passwoord"
+                            android:id="@+id/password"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="15dp"

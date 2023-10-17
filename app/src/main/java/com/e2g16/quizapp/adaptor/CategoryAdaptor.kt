@@ -38,6 +38,7 @@ class CategoryAdaptor(
 
             var intent = Intent(requireActivity, QuizActivity::class.java)
             intent.putExtra("categoryimg", datelist.catImage)
+            intent.putExtra("questionType", datelist.catText)
             requireActivity.startActivity(intent)
         }
     }

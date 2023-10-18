@@ -11,6 +11,7 @@ import com.e2g16.quizapp.Withdrawal
 import com.e2g16.quizapp.adaptor.CategoryAdaptor
 import com.e2g16.quizapp.databinding.FragmentHomeBinding
 import com.e2g16.quizapp.model.CategoryModelClass
+import com.e2g16.quizapp.model.Question
 import com.e2g16.quizapp.model.User
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import com.google.firebase.auth.ktx.auth
@@ -27,7 +28,9 @@ class HomeFragment : Fragment() {
     private val binding: FragmentHomeBinding by lazy {
         FragmentHomeBinding.inflate(layoutInflater)
     }
+
     private var categoryList = ArrayList<CategoryModelClass>()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         categoryList.add(CategoryModelClass(R.drawable.scince1, "science"))

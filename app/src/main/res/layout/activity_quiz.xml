@@ -168,24 +168,73 @@
         app:layout_constraintTop_toBottomOf="@+id/option3" />
 
     <LinearLayout
-        android:id="@+id/view"
+        android:id="@+id/winner"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="#A79C9C"
+        android:orientation="vertical"
+        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
-        android:background="#A79C9C" >
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
         <com.airbnb.lottie.LottieAnimationView
             android:id="@+id/animation_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 
-            app:lottie_rawRes="@raw/win"
+            app:lottie_autoPlay="true"
 
             app:lottie_loop="true"
-            app:lottie_autoPlay="true" />
+            app:lottie_rawRes="@raw/win" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins_extrabold"
+            android:gravity="center"
+            android:text="You win a chance to play"
+            android:textSize="28dp" />
+
     </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sorry"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#A79C9C"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            app:lottie_autoPlay="true"
+
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/sorry" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins_extrabold"
+            android:gravity="center"
+            android:text="Sorry you have lost"
+            android:textSize="28dp" />
+    </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

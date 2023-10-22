@@ -50,7 +50,7 @@
                 app:srcCompat="@drawable/coin" />
 
             <TextView
-                android:id="@+id/CoinWithdrawal"
+                android:id="@+id/coinWithdrawal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/poppins_bold"
@@ -75,7 +75,7 @@
             app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
         <TextView
-            android:id="@+id/textView7"
+            android:id="@+id/spinChance"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="4dp"
@@ -121,7 +121,7 @@
             app:srcCompat="@drawable/stoper" />
 
         <Button
-            android:id="@+id/Spin"
+            android:id="@+id/spin"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="50dp"

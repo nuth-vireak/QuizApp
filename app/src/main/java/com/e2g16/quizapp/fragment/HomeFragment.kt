@@ -54,6 +54,22 @@ class HomeFragment : Fragment() {
                 }
             )
 
+        Firebase.database.reference.child("PlayerCoin")
+            .child(Firebase.auth.currentUser!!.uid)
+            .addValueEventListener(object : ValueEventListener {
+                override fun onDataChange(snapshot: DataSnapshot) {
+                    val value = snapshot.value
+                    if (value != null) {
+                        binding.coinWithdrawal.text = snapshot.value.toString()
+                    }
+                }
+
+                override fun onCancelled(error: DatabaseError) {
+                    TODO()
+                }
+
+            })
+
 
     }
     override fun onCreateView(
@@ -61,7 +77,7 @@ class HomeFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding.CoinWithdrawal.setOnClickListener {
+        binding.coinWithdrawal.setOnClickListener {
             var bottomSheetDialog: BottomSheetDialogFragment = Withdrawal()
             bottomSheetDialog.show(requireActivity().supportFragmentManager, "TEST")
             bottomSheetDialog.enterTransition

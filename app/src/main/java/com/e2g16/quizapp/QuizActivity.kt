@@ -48,6 +48,22 @@ class QuizActivity : AppCompatActivity() {
 
             })
 
+        Firebase.database.reference.child("PlayerCoin")
+            .child(Firebase.auth.currentUser!!.uid)
+            .addValueEventListener(object : ValueEventListener {
+                override fun onDataChange(snapshot: DataSnapshot) {
+                    val value = snapshot.value
+                    if (value != null) {
+                        binding.coinWithdrawal.text = snapshot.value.toString()
+                    }
+                }
+
+                override fun onCancelled(error: DatabaseError) {
+                    TODO()
+                }
+
+            })
+
         questionList = ArrayList()
 
         var image = intent.getIntExtra("categoryimg", 0)
@@ -77,7 +93,7 @@ class QuizActivity : AppCompatActivity() {
 
         binding.categoryimg.setImageResource(image)
 
-        binding.CoinWithdrawal.setOnClickListener {
+        binding.coinWithdrawal.setOnClickListener {
             var bottomSheetDialog: BottomSheetDialogFragment = Withdrawal()
             bottomSheetDialog.show(this@QuizActivity.supportFragmentManager, "TEST")
             bottomSheetDialog.enterTransition

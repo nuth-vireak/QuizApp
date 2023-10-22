@@ -8,35 +8,59 @@ import android.widget.Toast
 import com.e2g16.quizapp.databinding.ActivityQuizBinding
 import com.e2g16.quizapp.model.Question
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.database.DataSnapshot
+import com.google.firebase.database.DatabaseError
+import com.google.firebase.database.ValueEventListener
+import com.google.firebase.database.ktx.database
 import com.google.firebase.firestore.Query
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 
 class QuizActivity : AppCompatActivity() {
 
-    private val binding by lazy {
-        ActivityQuizBinding.inflate(layoutInflater)
-    }
+    private val binding by lazy { ActivityQuizBinding.inflate(layoutInflater) }
 
+    var currentChance = 0L
     var currentQuestion = 0
     var score = 0
 
     private lateinit var questionList: ArrayList<Question>
 
     override fun onCreate(savedInstanceState: Bundle?) {
+
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
+
+        Firebase.database.reference.child("PlayChance")
+            .child(Firebase.auth.currentUser!!.uid)
+            .addValueEventListener(object : ValueEventListener {
+                override fun onDataChange(snapshot: DataSnapshot) {
+                    val value = snapshot.value
+                    if (value != null) {
+                        currentChance = value as? Long ?: 0
+                    }
+                }
+
+                override fun onCancelled(error: DatabaseError) {
+                    Log.d("TAG", "onCancelled: ${error.message}")
+                }
+
+            })
 
         questionList = ArrayList()
 
         var image = intent.getIntExtra("categoryimg", 0)
         var catText = intent.getStringExtra("questionType")
+
         Firebase.firestore.collection("Questions")
             .document(catText.toString())
             .collection("question1")
             .get()
             .addOnSuccessListener { questionData ->
+
                 questionList.clear()
+
                 for (data in questionData.documents) {
                     var question: Question? = data.toObject(Question::class.java)
                     questionList.add(question!!)
@@ -91,7 +115,11 @@ class QuizActivity : AppCompatActivity() {
 
         if (currentQuestion >= questionList.size) {
             if (score >= passScore) {
+
                 binding.winner.visibility = View.VISIBLE
+                Firebase.database.reference.child("PlayChance")
+                    .child(Firebase.auth.currentUser!!.uid).setValue(currentChance + 1)
+
             } else {
                 binding.sorry.visibility = View.VISIBLE
             }

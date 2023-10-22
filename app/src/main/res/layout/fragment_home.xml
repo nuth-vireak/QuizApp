@@ -50,7 +50,7 @@
                 app:srcCompat="@drawable/coin" />
 
             <TextView
-                android:id="@+id/CoinWithdrawal"
+                android:id="@+id/coinWithdrawal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/poppins_bold"
